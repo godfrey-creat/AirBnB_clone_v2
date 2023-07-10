@@ -3,6 +3,7 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
+sudo service nginx restart
 
 sudo mkdir -p /data/
 sudo mkdir -p /data/web_static/
@@ -14,7 +15,7 @@ sudo echo "<html>
   <head>
   </head>
   <body>
-    Holberton School
+    Hbnb
   </body>
 </html>" | sudo tee /data/web_static/releases/test/index.html
 
